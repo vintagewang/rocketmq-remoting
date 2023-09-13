@@ -1,0 +1,13 @@
+name: Count Lines of code
+run-name: ${{ github.actor }} is counting codes
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  package-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Count Lines of Code (cloc)
+        uses: djdefi/cloc-action@5
