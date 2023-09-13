@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is counting codes
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 jobs:
   package-and-deploy:
     runs-on: ubuntu-latest
